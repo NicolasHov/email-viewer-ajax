@@ -18,7 +18,7 @@
       <th scope="row"><%= i %></th>
       <td><%=email.object%></td>
       <td><%=email.body%></td>
-      <td><%= link_to "Remove", email, method: :delete, data: { confirm: "Are you sure?" } %></td>
+      <td><%= link_to "Remove", email, method: :delete, data: { confirm: "Are you sure?" }, :remote => true, :class => 'delete_email' %></td>
       <% i = i + 1%>
     </tr>
 
